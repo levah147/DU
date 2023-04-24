@@ -1,0 +1,128 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{% block title %}{% endblock %}</title>
+    <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+ integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+ <link rel="shortcut icon" type="image/x-icon" href="https://1.bp.blogspot.com/-xBsr6V3Q3hI/XTEamlj89xI/AAAAAAAAFvE/2OHjg6vIteg3PAL2FFL4B95e5D705d81QCPcBGAYYCw/s1600/Domino%2BUniversity%2BIbadan.png">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/unicons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="{% static 'plugins/fontawesome-free/css/all.min.css' %}">
+     <!-- Ionicons -->
+     <link rel="stylesheet" href="{% static 'https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' %}">
+     <!-- icheck bootstrap -->
+     <link rel="stylesheet" href="{% static 'plugins/icheck-bootstrap/icheck-bootstrap.min.css' %}">
+     <!-- Theme style -->
+     <link rel="stylesheet" href="{% static 'dist/css/adminlte.min.css' %}">
+     <!-- Google Font: Source Sans Pro -->
+     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+     <!-- Google Recaptcha     -->
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="{% static 'css/tooplate-style.css' %}">
+    <link rel="stylesheet" href="{% static 'base/main.css' %}">
+    
+<!--
+
+Tooplate 2115 Marvel
+
+https://www.tooplate.com/view/2115-marvel
+
+-->
+  </head>
+  <body>
+
+   
+<!-- add the navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="{% url 'home' %}"><img src="https://dominionuniversity.edu.ng/wp-content/uploads/2019/08/New_Logo_DU_1-1.png" alt=""></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav">
+			<li class="nav-item active">
+				<a class="nav-link" href="{% url 'home' %}">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'about' %}">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'contact' %}">Contact</a>
+			</li>
+      {% if request.user.is_authenticated %}
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'dashboard' %}">Dashboard</a>
+			</li>
+			
+      <li class="nav-item">
+				<a class="nav-link" href="{% url 'changepass' %}">Change Password</a>
+			</li>
+      <li class="nav-item">
+				<a class="nav-link" href="{% url 'logout' %}">Logout</a>
+			</li>
+      {% else %}
+			<li class="nav-item ">
+				<a class="nav-link" href="{% url 'login' %}">Login</a>
+			</li>
+      <li class="nav-item ">
+				<a class="nav-link" href="{% url 'registration' %}">Register</a>
+			</li>
+              {% endif %}
+			
+			
+		</ul>
+	</div>
+
+
+</nav>
+
+
+
+
+
+
+
+
+      
+
+    
+
+    
+    {% block content %}
+    {% endblock content %}
+
+  
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/Headroom.js' %}"></script>
+    <script src="{% static 'js/jQuery.headroom.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/smoothscroll.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+
+
+
+     <!-- jQuery -->
+     <script src="{% static 'plugins/jquery/jquery.min.js' %}"></script>
+     <!-- Bootstrap 4 -->
+     <script src="{% static 'plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+     <!-- AdminLTE App -->
+     <script src="{% static 'dist/js/adminlte.min.js' %}"></script>
+ 
+  </body>
+</html>

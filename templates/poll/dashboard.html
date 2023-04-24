@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+{% load static %}
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Modern admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities with bitcoin dashboard.">
+    <meta name="keywords" content="admin template, modern admin template, dashboard template, flat admin template, responsive admin template, web app, crypto dashboard, bitcoin dashboard">
+    <meta name="author" content="PIXINVENT">
+   
+    <title>{% block title %}Dashboard{% endblock %}</title>
+    <link rel="apple-touch-icon" href="app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://1.bp.blogspot.com/-xBsr6V3Q3hI/XTEamlj89xI/AAAAAAAAFvE/2OHjg6vIteg3PAL2FFL4B95e5D705d81QCPcBGAYYCw/s1600/Domino%2BUniversity%2BIbadan.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/vendors/css/vendors.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/vendors/css/weather-icons/climacons.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/fonts/meteocons/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/vendors/css/charts/morris.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/vendors/css/charts/chartist.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/vendors/css/charts/chartist-plugin-tooltip.css' %}">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/bootstrap-extended.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/colors.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/components.css' %}">
+    <!-- END: The -->
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/core/menu/menu-types/vertical-menu-modern.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/core/colors/palette-gradient.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/fonts/simple-line-icons/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/core/colors/palette-gradient.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/pages/timeline.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/pages/dashboard-ecommerce.css' %}">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <!-- END: Custom C
+
+</head>
+
+
+<!--- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern 2-columns   fixed-navbar" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+
+     <!-- BEGIN: Header-->
+     <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-dark navbar-shadow">
+        <div class="navbar-wrapper">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="nav-item mobile-menu d-lg-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu font-large-1"></i></a></li>
+                    <li class="nav-item mr-auto"><a class="navbar-brand" href="{% url 'home' %}"><img class="brand-logo" alt="OVS admin logo" src="https://dominionuniversity.edu.ng/wp-content/uploads/2019/08/New_Logo_DU_1-1.png">
+                            <h3 class="brand-text">OVS</h3>
+                        </a></li>
+                    <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="toggle-icon ft-toggle-right font-medium-3 white" data-ticon="ft-toggle-right"></i></a></li>
+                    <li class="nav-item d-lg-none"><a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="la la-ellipsis-v"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-container content">
+                <div class="collapse navbar-collapse" id="navbar-mobile">
+                    <ul class="nav navbar-nav mr-auto float-left">
+                        <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand" href="#"><i class="ficon ft-maximize"></i></a></li>
+                        <li class="dropdown nav-item mega-dropdown d-none d-lg-block">
+                            <ul class="mega-dropdown-menu dropdown-menu row p-1">
+                               
+                               
+                               
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                            <div class="search-input">
+                                
+                                <div class="search-input-close"><i class="ft-x"></i></div>
+                                <ul class="search-list"></ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav float-right">
+                        
+
+
+
+                        
+                        <li ></a>
+                            <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                                <li class="dropdown-menu-header">
+                                
+                                </li>
+                                <li class="scrollable-container media-list w-100"><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i class="ft-plus-square icon-bg-circle bg-cyan mr-0"></i></div>
+                                            
+
+                                
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon ft-mail"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                                <li class="dropdown-menu-header">
+                                    <h6 class="dropdown-header m-0"><span class="grey darken-2">Messages</span></h6><span class="notification-tag badge badge-warning float-right m-0">4 New</span>
+                                </li>
+                                <li class="scrollable-container media-list w-100"><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left"><span class="avatar avatar-sm avatar-online rounded-circle"><img src="app-assets/images/portrait/small/avatar-s-19.png" alt="avatar"><i></i></span></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Margaret Govan</h6>
+                                                <p class="notification-text font-small-3 text-muted">I like your portfolio, let's start.</p><small>
+                                                    <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Today</time></small>
+                                            </div>
+                                        </div>
+                                    </a><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left"><span class="avatar avatar-sm avatar-busy rounded-circle"><img src="app-assets/images/portrait/small/avatar-s-2.png" alt="avatar"><i></i></span></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Bret Lezama</h6>
+                                                <p class="notification-text font-small-3 text-muted">I have seen your work, there is</p><small>
+                                                    <time class="media-meta text-muted" datetime="2023-04-11T18:29:20+08:00">Tuesday</time></small>
+                                            </div>
+                                        </div>
+                                    
+                                    
+                                    
+                                    </li>
+                                <li class="dropdown-menu-footer"><a class="dropdown-item text-muted text-center" href="javascript:void(0)">Read all messages....</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"><span class="mr-1 user-name text-bold-700">{{ user.username }}</span><span class="avatar avatar-online"><img src="https://dominionuniversity.edu.ng/wp-content/uploads/2019/08/New_Logo_DU_1-1.png" alt="avatar"><i></i></span></a>
+                            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="{% url 'profile' %}"><i class="ft-user"></i>  Profile</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" href="{% url 'logout' %}"><i class="ft-power"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+
+    <div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class="active"><a href="{% url 'dashboard' %}"><i class="la la-home"></i><span class="menu-title" data-i18n="eCommerce Dashboard">OVS Dashboard</span></a>
+                </li>
+                <li class=" navigation-header"><span data-i18n="Ecommerce">REPORTS</span><i class="la la-ellipsis-h" data-toggle="tooltip" data-placement="right" data-original-title="Ecommerce"></i>
+                </li>
+                {% if request.user.is_staff and user.is_superuser %} 
+                <li class=" nav-item"><a href="#"><i class="la la-th-large"></i><span class="menu-title" data-i18n="Shop">Voters</span></a>
+                </li> {% endif %}
+                <li class=" nav-item"><a href="{% url 'position' %}"><i class="la la-list"></i><span class="menu-title" data-i18n="Product Detail">Positions </span></a>
+                </li>
+                <li class=" nav-item"><a href="{% url 'candidate_list' %}"><i class="la la-list"></i><span class="menu-title" data-i18n="Shopping Cart"> Candidates</span></a>
+
+                  </li>
+
+               
+                <li class=" navigation-header"><span data-i18n="Ecommerce">EXIT</span><i class="la la-ellipsis-h" data-toggle="tooltip" data-placement="right" data-original-title="Ecommerce"></i>
+                </li>
+                <li class=" nav-item"><a href="{% url 'logout' %}"><i class="la la-list"></i><span class="menu-title" data-i18n="Shopping Cart"> Logout</span></a>
+                </li>
+               
+               
+                
+                  
+
+    
+               
+                
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- END: Main Menu-->
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+            </div>
+            <div class="content-body">
+                <!-- eCommerce statistic -->
+                <div class="row">
+                   
+                                     
+
+                                      
+                    
+
+                    
+                    
+                    <div class="col-xl-3 col-lg-6 col-12">
+                        <a href="{% url 'position' %}">
+                        <div class="card pull-up">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="media d-flex">
+                                        <div class="media-body text-left">
+                                            <h3 class="danger"></h3>
+                                            <h6>Cast vote</h6>
+                                        </div>
+                                        <div>
+                                            <i class=" danger font-large-2 float-right"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+  <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
+</svg></i>
+                                        </div>
+                                    </div>
+                                    <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+                                        <div class="progress-bar bg-gradient-x-danger" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div></a>
+                        </div>
+
+                        
+                    </div>
+                    {% if request.user.is_staff and user.is_superuser %}  
+                    <div class="col-xl-3 col-lg-6 col-12">
+                        <a href="{% url 'result' %}">
+                        <div class="card pull-up">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="media d-flex">
+                                        <div class="media-body text-left">
+                                            <h3 class="success"></h3>
+                                            <h6>Results</h6>
+                                        </div>
+                                        <div>
+                                            <i class=" success font-large-2 float-right"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-menu-button-wide" viewBox="0 0 16 16">
+  <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v2A1.5 1.5 0 0 1 14.5 5h-13A1.5 1.5 0 0 1 0 3.5v-2zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-13z"/>
+  <path d="M2 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm10.823.323-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+</svg></i>
+                                        </div>
+                                    </div>
+                                    <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+                                        <div class="progress-bar bg-gradient-x-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                    {% endif %}
+
+                </div>
+                <!--/ eCommerce statistic -->
+
+            
+
+
+
+
+              
+
+
+
+                <!-- Basic Horizontal Timeline -->
+                <div class="row match-height">
+                    <div class="col-xl-4 col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Basic Card</h4>
+                            </div>
+                            <div class="card-content">
+                                <img class="img-fluid" src="https://dominionuniversity.edu.ng/wp-content/uploads/2019/08/New_Logo_DU_1-1.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">A World Class Private University equipped with the latest ultra modern facilities, located in Ibadan, its serene academic environment is ideal for learning, accessibility and mobility.</p>
+                                    
+                                </div>
+                            </div>
+                            
+
+
+
+
+                                          
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ Basic Horizontal Timeline -->
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light navbar-border navbar-shadow">
+        <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span class="float-md-left d-block d-md-inline-block">Copyright &copy; 2023 <a class="text-bold-800 grey darken-2" href="https://1.envato.market/modern_admin" target="_blank">LEVAH</a></span><span class="float-md-right d-none d-lg-block">Hand-crafted & Made with<i class="ft-heart pink"></i><span id="scroll-top"></span></span></p>
+    </footer>
+    <!-- END: Footer-->
+
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="{% static 'app-assets/vendors/js/vendors.min.js' %}"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="{% static 'app-assets/vendors/js/charts/chartist.min.js' %}"></script>
+    <script src="{% static 'app-assets/vendors/js/charts/chartist-plugin-tooltip.min.js' %}"></script>
+    <script src="{% static 'app-assets/vendors/js/charts/raphael-min.js' %}"></script>
+    <script src="{% static 'app-assets/vendors/js/charts/morris.min.js' %}"></script>
+    <script src="{% static 'app-assets/vendors/js/timeline/horizontal-timeline.js' %}"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="{% static 'app-assets/js/core/app-menu.js' %}"></script>
+    <script src="{% static 'app-assets/js/core/app.js' %}"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="{% static 'app-assets/js/scripts/pages/dashboard-ecommerce.js' %}"></script>
+    <!-- END: Page JS-->
+
+</body>
+<!-- END: Body-->
+
+</html>

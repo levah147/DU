@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+{% load static %}
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Modern admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities with bitcoin dashboard.">
+    <meta name="keywords" content="admin template, modern admin template, dashboard template, flat admin template, responsive admin template, web app, crypto dashboard, bitcoin dashboard">
+    <meta name="author" content="PIXINVENT">
+    <title>Dashboard </title>
+     <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+ integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+<!--FontAwesome CDN-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+ integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+
+    <link rel="apple-touch-icon" href="app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://1.bp.blogspot.com/-xBsr6V3Q3hI/XTEamlj89xI/AAAAAAAAFvE/2OHjg6vIteg3PAL2FFL4B95e5D705d81QCPcBGAYYCw/s1600/Domino%2BUniversity%2BIbadan.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/vendors/css/vendors.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/vendors/css/weather-icons/climacons.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/fonts/meteocons/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/vendors/css/charts/morris.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/vendors/css/charts/chartist.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/vendors/css/charts/chartist-plugin-tooltip.css' %}">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/bootstrap-extended.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/colors.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/components.css' %}">
+    <!-- END: The -->
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/core/menu/menu-types/vertical-menu-modern.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/core/colors/palette-gradient.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/fonts/simple-line-icons/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/core/colors/palette-gradient.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/pages/timeline.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/pages/dashboard-ecommerce.css' %}">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <!-- END: Custom C
+
+</head>
+
+
+<!--- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern 2-columns   fixed-navbar" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-dark navbar-shadow">
+        <div class="navbar-wrapper">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="nav-item mobile-menu d-lg-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu font-large-1"></i></a></li>
+                    <li class="nav-item mr-auto"><a class="navbar-brand" href="{% url 'dashboard' %}"><img class="brand-logo" alt="OVS admin logo" src="https://dominionuniversity.edu.ng/wp-content/uploads/2019/08/New_Logo_DU_1-1.png">
+                            <h3 class="brand-text">OVS</h3>
+                        </a></li>
+                    <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="toggle-icon ft-toggle-right font-medium-3 white" data-ticon="ft-toggle-right"></i></a></li>
+                    <li class="nav-item d-lg-none"><a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="la la-ellipsis-v"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-container content">
+                <div class="collapse navbar-collapse" id="navbar-mobile">
+                    <ul class="nav navbar-nav mr-auto float-left">
+                        <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand" href="#"><i class="ficon ft-maximize"></i></a></li>
+                        <li class="dropdown nav-item mega-dropdown d-none d-lg-block">
+                            <ul class="mega-dropdown-menu dropdown-menu row p-1">
+                               
+                               
+                               
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                            <div class="search-input">
+                                
+                                <div class="search-input-close"><i class="ft-x"></i></div>
+                                <ul class="search-list"></ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav float-right">
+                        
+
+
+
+                        
+                        <li ></a>
+                            <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                                <li class="dropdown-menu-header">
+                                
+                                </li>
+                                <li class="scrollable-container media-list w-100"><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i class="ft-plus-square icon-bg-circle bg-cyan mr-0"></i></div>
+                                            
+
+                                
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon ft-mail"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                                <li class="dropdown-menu-header">
+                                    <h6 class="dropdown-header m-0"><span class="grey darken-2">Messages</span></h6><span class="notification-tag badge badge-warning float-right m-0">4 New</span>
+                                </li>
+                                <li class="scrollable-container media-list w-100"><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left"><span class="avatar avatar-sm avatar-online rounded-circle"><img src="app-assets/images/portrait/small/avatar-s-19.png" alt="avatar"><i></i></span></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Margaret Govan</h6>
+                                                <p class="notification-text font-small-3 text-muted">I like your portfolio, let's start.</p><small>
+                                                    <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Today</time></small>
+                                            </div>
+                                        </div>
+                                    </a><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left"><span class="avatar avatar-sm avatar-busy rounded-circle"><img src="app-assets/images/portrait/small/avatar-s-2.png" alt="avatar"><i></i></span></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Bret Lezama</h6>
+                                                <p class="notification-text font-small-3 text-muted">I have seen your work, there is</p><small>
+                                                    <time class="media-meta text-muted" datetime="2023-04-11T18:29:20+08:00">Tuesday</time></small>
+                                            </div>
+                                        </div>
+                                    
+                                    
+                                    
+                                    </li>
+                                <li class="dropdown-menu-footer"><a class="dropdown-item text-muted text-center" href="javascript:void(0)">Read all messages....</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"><span class="mr-1 user-name text-bold-700">{{ user.username }}</span><span class="avatar avatar-online"><img src="https://dominionuniversity.edu.ng/wp-content/uploads/2019/08/New_Logo_DU_1-1.png" alt="avatar"><i></i></span></a>
+                            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="{% url 'profile' %}"><i class="ft-user"></i>  Profile</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" href="{% url 'logout' %}"><i class="ft-power"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+
+    <div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class="active"><a href="{% url 'dashboard' %}"><i class="la la-home"></i><span class="menu-title" data-i18n="eCommerce Dashboard">OVS Dashboard</span></a>
+                </li>
+                <li class=" navigation-header"><span data-i18n="Ecommerce">REPORTS</span><i class="la la-ellipsis-h" data-toggle="tooltip" data-placement="right" data-original-title="Ecommerce"></i>
+                </li>
+                {% if request.user.is_staff and user.is_superuser %} 
+                <li class=" nav-item"><a href="#"><i class="la la-th-large"></i><span class="menu-title" data-i18n="Shop">Voters</span></a>
+                </li>
+                {% endif %}
+                <li class=" nav-item"><a href="{% url 'position' %}"><i class="la la-list"></i><span class="menu-title" data-i18n="Product Detail">Positions </span></a>
+                </li>
+                <li class=" nav-item"><a href="{% url 'candidate_list' %}"><i class="la la-list"></i><span class="menu-title" data-i18n="Shopping Cart"> Candidates</span></a>
+
+          
+
+                
+                </li>
+                <li class=" navigation-header"><span data-i18n="Ecommerce">EXIT</span><i class="la la-ellipsis-h" data-toggle="tooltip" data-placement="right" data-original-title="Ecommerce"></i>
+                </li>
+                <li class=" nav-item"><a href="{% url 'logout' %}"><i class="la la-list"></i><span class="menu-title" data-i18n="Shopping Cart"> Logout</span></a>
+                </li>
+               
+               
+                
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- END: Main Menu-->
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+            </div>
+            <div class="content-body">
+                
+
+            
+
+
+ 
+
+
+
+
+
+
+
+
+{% block content %}
+{% endblock content %}
+
+
+
+
+
+
+
+              
+
+
+
+                <!-- Basic Horizontal Timeline -->
+                <div class="row match-height">
+                    <div class="col-xl-4 col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Basic Card</h4>
+                            </div>
+                            <div class="card-content">
+                                <img class="img-fluid" src="https://dominionuniversity.edu.ng/wp-content/uploads/2019/08/New_Logo_DU_1-1.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">A World Class Private University equipped with the latest ultra modern facilities, located in Ibadan, its serene academic environment is ideal for learning, accessibility and mobility.</p>
+                                    
+                                </div>
+                            </div>
+                            
+
+
+
+
+                                          
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ Basic Horizontal Timeline -->
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light navbar-border navbar-shadow">
+        <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span class="float-md-left d-block d-md-inline-block">Copyright &copy; 2023 <a class="text-bold-800 grey darken-2" href="https://1.envato.market/modern_admin" target="_blank">LEVAH</a></span><span class="float-md-right d-none d-lg-block">Hand-crafted & Made with<i class="ft-heart pink"></i><span id="scroll-top"></span></span></p>
+    </footer>
+    <!-- END: Footer-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="{% static 'app-assets/vendors/js/vendors.min.js' %}"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="{% static 'app-assets/vendors/js/charts/chartist.min.js' %}"></script>
+    <script src="{% static 'app-assets/vendors/js/charts/chartist-plugin-tooltip.min.js' %}"></script>
+    <script src="{% static 'app-assets/vendors/js/charts/raphael-min.js' %}"></script>
+    <script src="{% static 'app-assets/vendors/js/charts/morris.min.js' %}"></script>
+    <script src="{% static 'app-assets/vendors/js/timeline/horizontal-timeline.js' %}"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="{% static 'app-assets/js/core/app-menu.js' %}"></script>
+    <script src="{% static 'app-assets/js/core/app.js' %}"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="{% static 'app-assets/js/scripts/pages/dashboard-ecommerce.js' %}"></script>
+    <!-- END: Page JS-->
+
+</body>
+<!-- END: Body-->
+
+</html>

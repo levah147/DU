@@ -1,0 +1,64 @@
+{% extends "poll/test.html" %}
+
+{% block title %}Update Profile{% endblock %}
+
+{% block content %}
+    
+
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header text-bg-dark mb-3" >
+                        Profile Page
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                
+                                <span class="h4 "> Profile Information</span>
+                                 <a class="btn btn-outline-primary btn-sm float-right" href="{% url 'editprofile' %}">Edit</a>
+                                <hr>
+                                <table class="table bg-white table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Username</th>
+                                            <td>{{user.username}}</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">First name</th>
+                                            <td>{{user.first_name}}</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Last name</th>
+                                            <td>{{user.last_name}}</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Email</th>
+                                            <td>{{user.email}}</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Phone</th>
+                                            <td >{{ user.Profile.phone }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Address</th>
+                                            <td>KLM 24 Ibadan - Lagos Expressway, City of Faith, Oyo State, Nigeria.</td>
+                                        </tr>.
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div class="col-md-4">
+                                <img class="img-thumbnail" src="{{ obj.image.url }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    {% include 'poll/index.html' %}
+
+    {% endblock content %}

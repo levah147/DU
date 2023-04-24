@@ -1,0 +1,36 @@
+{% extends 'poll/base.html' %}
+
+
+{% block content %}
+
+
+
+<div class="jumbotron">
+	{% if messages %}
+	  {% for message in messages %}
+	  <div class="alert alert-success" role="alert">
+		{{ message }}
+	  </div>
+	  {% endfor %}
+	{% endif %}
+	<div class="col-lg-8 mx-auto">
+		<h2>Fast, Secured and Accessible Voting System
+
+		  </h2>
+		  <p>Let’s make voting and elections easy for you. This is designed to ensure a secured voting session.</p>
+	  </div>
+
+  
+	 
+	  {% include 'poll/main.html' %}
+    
+   
+
+	  {% include 'poll/sfeatures.html' %}  
+	 
+	  {% include 'poll/footer.html' %}
+
+
+
+{% endblock content %}
+
